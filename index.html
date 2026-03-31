@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MUN Conference</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #0b1c2c;
+            color: white;
+        }
+
+        /* NAVBAR */
+        nav {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: gold;
+        }
+
+        /* HERO */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+                url("https://images.unsplash.com/photo-1529101091764-c3526daf38fe") no-repeat center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 65px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 22px;
+            margin: 15px;
+        }
+
+        .hero button {
+            padding: 12px 30px;
+            background: gold;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .hero button:hover {
+            background: orange;
+        }
+
+        /* ABOUT SECTION */
+        .about {
+            padding: 80px;
+            text-align: center;
+        }
+
+        .about h2 {
+            color: gold;
+        }
+
+        /* CARDS */
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 50px;
+        }
+
+        .card {
+            background: #081520;
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="committees.html">Committees</a>
+        <a href="register.html">Register</a>
+    </nav>
+
+    <!-- HERO -->
+    <div class="hero">
+        <h1>Model United Nations</h1>
+        <p>Empowering Future Diplomats</p>
+        <button onclick="location.href='register.html'">Register Now</button>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="about">
+        <h2>About MUN</h2>
+        <p>
+            Model United Nations (MUN) is a simulation of the United Nations
+            where students engage in diplomacy, debate global issues, and
+            develop leadership skills.
+        </p>
+    </div>
+
+    <!-- COMMITTEE CARDS -->
+    <div class="cards">
+        <div class="card">
+            <h3>UNSC</h3>
+            <p>United Nations Security Council</p>
+        </div>
+
+        <div class="card">
+            <h3>UNGA</h3>
+            <p>General Assembly</p>
+        </div>
+
+        <div class="card">
+            <h3>WHO</h3>
+            <p>World Health Organization</p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 MUN Conference | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
